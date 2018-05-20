@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180423214616) do
+ActiveRecord::Schema.define(version: 20180518171914) do
 
   create_table "legislators", force: :cascade do |t|
     t.string   "first_name"
@@ -22,9 +22,10 @@ ActiveRecord::Schema.define(version: 20180423214616) do
     t.string   "chamber"
     t.date     "term_start"
     t.date     "term_end"
-    t.decimal  "missed_votes_pct"
+    t.float    "missed_votes_pct"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.integer  "state_id"
   end
 
   create_table "states", force: :cascade do |t|

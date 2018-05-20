@@ -5,6 +5,13 @@ class StatesController < ApplicationController
   end
 
   def show
-    @state = State.find(state_id)
+    @state = State.find(params[:id])
+  end
+
+
+  private
+  
+  def state_params
+    params.require(:state).permit(:name, :abbreviation, :state_id)
   end
 end

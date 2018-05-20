@@ -18,6 +18,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'figaro'
 gem 'httparty'
+gem 'pry'
+gem 'pry-byebug'
 
 
 group :development, :test do
