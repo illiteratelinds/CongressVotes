@@ -1,0 +1,20 @@
+<%= @legislator.first_name %>
+<%= @legislator.last_name %>
+(<%= @legislator.party %>)<br>
+<%= @legislator.title %><br><br>
+Votes with Party Percentage: <%= @legislator.votes_with_party_pct %>%<br>
+Total Votes: <%= @legislator.total_votes %><br>
+Missed Votes: <%= @legislator.missed_votes %><br>
+Percentage of Votes Missed: <%= @legislator.missed_votes_pct %>%<br><br>
+Phone: <%= @legislator.phone %><br>
+Office Address: <%= @legislator.office %><br>
+Date of Birth: <%= @legislator.date_of_birth %><br><br>
+
+Social<br><br>
+Twitter: <%= @legislator.twitter_account %><br>
+Facebook: <%= @legislator.facebook_account %><br>
+Youtube: <%= @legislator.youtube_account %><br>
+Govtrack: <%= @legislator.govtrack_id %><br>
+Votesmart: <%= @legislator.votesmart_id %><br><br><br>
+
+Next Election: <b><%= @legislator.next_election %></b><br>

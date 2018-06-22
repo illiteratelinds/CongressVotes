@@ -2,7 +2,7 @@ require 'pry-byebug'
 
 class PropublicaApiCaller
 
-  @attributes = ["state", "first_name", "middle_name", "last_name", "party", "title", "chamber", "term_start", "term_end", "missed_votes_pct"]
+  @attributes = ["first_name", "middle_name", "last_name", "party", "title", "chamber", "term_start", "term_end", "missed_votes_pct", "date_of_birth", "next_election", "total_votes", "missed_votes", "office", "phone", "votes_with_party_pct", "twitter_account", "facebook_account", "youtube_account", "govtrack_id", "votesmart_id", "state"]
   @chambers = ["senate", "house"]
 
   def self.update_legislators
