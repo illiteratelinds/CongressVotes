@@ -5,7 +5,7 @@ class LegislatorsController < ApplicationController
   end
 
   def show
-    @legislator = Legislator.find(legislator_id)
+    @legislator = Legislator.find(params[:id])
   end
 
   private
