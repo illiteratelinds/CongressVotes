@@ -12,9 +12,12 @@ Date of Birth: <%= @legislator.date_of_birth %><br><br>
 
 Social<br><br>
 Twitter: <%= @legislator.twitter_account %><br>
-Facebook: <%= @legislator.facebook_account %><br>
+<a href="https://www.facebook.com/<%= @legislator.facebook_account %>/">Facebook</a> <br>
 Youtube: <%= @legislator.youtube_account %><br>
 Govtrack: <%= @legislator.govtrack_id %><br>
-Votesmart: <%= @legislator.votesmart_id %><br><br><br>
+<a href="https://votesmart.org/candidate/biography/<%= @legislator.votesmart_id %>/<%= @legislator.first_name %>-<%= @legislator.last_name %>"> Votesmart</a>
+
+
+<br><br><br>
 
 Next Election: <b><%= @legislator.next_election %></b><br>
