@@ -11,10 +11,12 @@ Office Address: <%= @legislator.office %><br>
 Date of Birth: <%= @legislator.date_of_birth %><br><br>
 
 Social<br><br>
-Twitter: <%= @legislator.twitter_account %><br>
+<a href="https://twitter.com/<%= @legislator.twitter_account %>">Twitter</a><br>
 <a href="https://www.facebook.com/<%= @legislator.facebook_account %>/">Facebook</a> <br>
-Youtube: <%= @legislator.youtube_account %><br>
-Govtrack: <%= @legislator.govtrack_id %><br>
+<a href="https://www.youtube.com/user/<%= @legislator.youtube_account %>">Youtube</a><br>
+
+<a href="https://www.govtrack.us/congress/members/<%= @legislator.first_name %>_<%= @legislator.last_name %>/<%= @legislator.govtrack_id %>">Govtrack</a>
+<br>
 <a href="https://votesmart.org/candidate/biography/<%= @legislator.votesmart_id %>/<%= @legislator.first_name %>-<%= @legislator.last_name %>"> Votesmart</a>
 
 
