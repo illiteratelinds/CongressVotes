@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180622042337) do
+ActiveRecord::Schema.define(version: 20190328124131) do
 
   create_table "legislators", force: :cascade do |t|
     t.string   "first_name"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20180622042337) do
     t.string   "youtube_account"
     t.string   "govtrack_id"
     t.string   "votesmart_id"
+    t.string   "member_id"
   end
 
   create_table "states", force: :cascade do |t|

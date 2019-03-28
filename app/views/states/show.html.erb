@@ -1,7 +1,7 @@
 <%= @state.name %><br><br>
 <% @state.legislators.each do |legislator| %>
   <%= link_to legislator.first_name + " " + legislator.last_name, legislator_path(legislator) %>
-  <%= legislator.party %>
+  (<%= legislator.party %>)
   <%= legislator.title %>
   <br>
 <% end %>
